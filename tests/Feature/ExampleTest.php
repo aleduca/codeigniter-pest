@@ -1,5 +1,3 @@
 <?php
 
-test('example', function () {
-    expect(true)->toBeTrue();
-});
+test('can access home and see home title')->get('/')->assertSee('Home');

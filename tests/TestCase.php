@@ -2,9 +2,10 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use CodeIgniter\Test\CIUnitTestCase;
+use CodeIgniter\Test\FeatureTestTrait;
 
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends CIUnitTestCase
 {
-    //
+	use FeatureTestTrait;
 }
